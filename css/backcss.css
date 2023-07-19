@@ -1,0 +1,263 @@
+.margin{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container{
+    /*display: flex;*/
+    width: 100%;
+    height: 100%;
+    /*flex-direction: column;*/
+    text-align: center;
+}
+
+.ContainerLeft {
+    width: 100%;
+    height: 100%;
+}
+
+.containerRigth {
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.photo{
+    width: 90%;
+    height: 90%;
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
+    filter: drop-shadow(0 0 5px #C4C4C4);
+   
+
+}
+
+.photoLogo {
+    display: flex;
+    width: 40%;
+    justify-content: flex-end;
+}
+.formulario {
+    display: flex;
+    width: 100%;
+    /* padding-left: 15%; */
+    /* align-items: center; */
+    /*padding-top: 10%;*/
+    /* align-items: center; */
+    border-bottom: solid 2px #E5E5E5;
+}
+.TextTitle {
+    font-family: Montserrat;
+    font-size: 2vw;
+    color: rgb(53, 53, 53);
+    font-weight: bold;
+    margin-top: 4%;
+    /* text-align: center; */
+    vertical-align: center;
+    /* width: 60%; */
+    justify-content: flex-start;
+}
+.dark {
+    border-bottom: solid 2px #E5E5E5;
+    width: 80%;
+}
+.wrapformulario {
+    width: 60%;
+    /* margin-left: 6%; */
+}
+.contenerdorinput {
+    width: 100%;
+    height: 100%;
+    display: table-caption;
+    margin-top: 2%;
+    /*margin-left: 40%;*/
+  
+}
+
+.labels {
+    font-family: Montserrat;
+    font-size: 2vw;
+    color: #353535;
+    font-weight: 500;
+}
+.inputs{
+
+    width: 420px;
+    height: 30px;
+    padding: 8px 16px;
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+    font-size: 2vw;
+    margin-bottom: 10%;
+   
+  
+}
+
+.inputs:focus{
+   border: 1px solid #60495A;
+   box-shadow: 0 0 5px #60495A;
+   outline: none;
+}
+.forgetpass{
+    font-family: Montserrat;
+    font-size: 2vw;
+    color: #8AA632;
+    font-weight: 600;
+
+}
+.btn{
+    width: 420px;
+    height: 48px;
+    background: #60495A;
+    border-radius: 8px;
+    font-size: 2vw;
+    color: white;
+    border-color: #60495A;
+    border: solid 1px #60495A;
+   
+}
+.btn:hover{
+    /*background: linear-gradient(180deg, #8AA632 0%, #5C4A59 100%);*/
+    background: #3D3243;
+    transition: all .3s;
+}
+@media(min-width:1024px){
+    .margin{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    
+    
+    .container{
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .ContainerLeft {
+        width: 70%;
+        height: 100%;
+    }
+    
+    .containerRigth {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    
+    .photo{
+        width: 90%;
+        height: 90%;
+        border-top-right-radius: 15%;
+        border-bottom-right-radius: 15%;
+        filter: drop-shadow(0 0 5px #C4C4C4);
+       
+    
+    }
+    
+    .photoLogo {
+        display: flex;
+        width: 40%;
+        justify-content: flex-end;
+    }
+    .formulario {
+        display: flex;
+        width: 100%;
+        /* padding-left: 15%; */
+        /* align-items: center; */
+        padding-top: 10%;
+        /* align-items: center; */
+        border-bottom: solid 2px #E5E5E5;
+    }
+    .TextTitle {
+        font-family: Montserrat;
+        font-size: 2vw;
+        color: rgb(53, 53, 53);
+        font-weight: bold;
+        margin-top: 2%;
+        width: 60%;
+        justify-content: flex-start;
+    }
+    .dark {
+        border-bottom: solid 2px #E5E5E5;
+        width: 80%;
+    }
+    .wrapformulario {
+        width: 80%;
+        margin-left: 6%;
+       
+       
+    }
+    .contenerdorinput {
+        width: 80%;
+        height: 100%;
+        display: table-caption;
+        margin-top: 20%;
+        /*margin-left: 40%;*/
+      
+    }
+    
+    .labels{
+        font-family: Montserrat;
+        font-size: 1vw;
+        color:#353535;
+        font-weight: 500;
+        
+    }
+    .inputs{
+    
+        width: 420px;
+        height: 30px;
+        padding: 8px 16px;
+        border: 1px solid #E5E5E5;
+        border-radius: 8px;
+        font-size: 1vw;
+        margin-bottom: 10%;
+       
+      
+    }
+    
+    .inputs:focus{
+       border: 1px solid #60495A;
+       box-shadow: 0 0 5px #60495A;
+       outline: none;
+    }
+    .forgetpass{
+        font-family: Montserrat;
+        font-size: 1vw;
+        color: #8AA632;
+        font-weight: 600;
+    
+    }
+    .btn{
+        width: 420px;
+        height: 48px;
+        background: #60495A;
+        border-radius: 8px;
+        font-size: 1vw;
+        color: white;
+        border-color: #60495A;
+        border: solid 1px #60495A;
+       
+    }
+    .btn:hover{
+        /*background: linear-gradient(180deg, #8AA632 0%, #5C4A59 100%);*/
+        background: #3D3243;
+        transition: all .3s;
+    }
+    
+    
+    
+    
+}
+

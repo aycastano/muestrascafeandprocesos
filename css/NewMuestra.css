@@ -1,0 +1,358 @@
+.margin{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    
+}
+/*header*/
+.header{
+    width: 100%;
+    background-color: #3F3244;
+    display: grid;
+    grid-template-columns: auto auto auto 15%;
+    grid-template-rows: auto;
+    color: #FFFFFf;
+}
+.logo{
+    padding: 1em 1em 1em 1em;
+     
+}
+.iconuser{
+  text-align: center;
+  padding: 1.5em 1em 1em 1em;
+}
+
+.text{
+    font-family: Montserrat;
+    font-size: 1vw;
+    padding: 2.5em 1em 1em 1em;
+}
+
+.logout{
+    text-align: left;
+    padding: 1.5em 1em 1em 1em;
+}
+/*fin de header*/
+
+/*franja*/
+.subheader{
+    width: 100%;
+    background-color: #F7F7F7;
+    font-family: Montserrat;
+    padding: 0.5em 1em 0.5em 1em;
+    font-size: 0.8vw;
+    cursor: pointer;
+}
+.textfranjaverde{
+    color: #5B7900;
+    font-weight: 700;
+    font-size: 0.8vw;
+}
+/*fin franja*/
+/*imagenes*/
+.imglogo{
+    width:40%;
+  }
+
+.imguser{
+    width:40%;
+}
+.imglogout{
+    width: 100%;
+    vertical-align: center;
+}
+.imgeditar{
+    width: 100%;
+}
+.imgeliminar{
+    width: 100%;
+}
+/* fin imagenes*/  
+
+/*global*/
+.divglobal{
+      background-color: #FFFFFf;
+     
+   }
+/*div1*/
+.div1{
+    background-color:#F8F8F8;
+    border-radius: 8px;
+    width: 80%;
+    height: 150px;
+    padding: 2em 1em 1em 1em;
+    margin: 0px auto;
+    
+}
+.contenedornuevamuestra{
+    background-color:#D8D8F6;
+    border-radius: 8px;
+    width: 98%;
+    display: grid;
+    grid-template-columns: auto 15% 15%;
+}
+.titulo{
+    font-size: 1vw;
+    text-align: left;
+    padding: 1.5em 1em 1em 1em;
+    font-weight: 700;
+    font-family: Montserrat;
+}
+.editarmuestra{
+      padding: 1em 1em 1em 1em;
+}
+.eliminarmuestra{
+    padding: 1em 1em 1em 1em;
+}
+.selectores{
+    width: 65%;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: auto auto;
+  
+  
+
+}
+.optionselector{
+    font-size: 1vw;
+    color: #545454;
+    font-family: Montserrat;
+ }
+ .inputselector{
+    width: 80%;
+    height: 30px;
+    padding: 0px 15px;
+    border: 1px solid #E5E5E5;
+    border-radius: 6px;
+    font-family: Montserrat;
+    color: #545454;
+    font-size: 1vw;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.03);
+  
+ }
+ .inputselector:focus{
+    color: #5B7900;
+    box-shadow: 0 0 1px 3px #5B7900;
+    outline: none;
+ }
+
+/*fin div1*/
+/*incio div2*/
+.div2{
+    margin: 0px auto;
+    background-color:#F8F8F8;
+    border-radius: 8px;
+    width: 82%;
+
+
+   
+}
+.pasos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    color: #FFFFFF;
+ 
+}
+/*imagenes de los pasos*/
+
+.muestra{
+    border-radius: 8px 0px 0px 0px;
+ }
+ .fisico{
+    width:100%;
+}
+.sensorial{
+    width: 100%;
+    border-radius: 0px 8px 0px 0px;
+}
+ .imgmuestras{
+    width:100%;
+    border-radius: 8px 0px 0px 0px;
+}
+.imgfisico{
+    width: 100%;
+}
+.imgsensorial{
+    width: 100%;
+    border-radius: 0px 8px 0px 0px;
+}
+
+/*fin de las imagenes de los pasos*/
+/*inicio  barra de busqueda*/
+.barrabusqueda{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 15% 15% auto 30%;
+    background-color: #D8D9F3;
+    margin-left: 5%;
+    border-radius: 8px;
+}
+.productor{
+    /* padding: 1em 1em 1em 1em; */
+    display: flex;
+    justify-items: center;
+    padding-left: 10%;
+}
+.empresa{
+    /* padding-top: 0.8em; */
+    display: flex;
+    justify-items: center;
+    padding-left: 10%;
+}
+.textoseleccionar{
+   padding: 0.8em 1em 1em 1em;
+   text-align: right;
+}
+.inputbusqueda{
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    text-align: left;
+}
+.label{
+    font-family: Montserrat;
+    font-size: 1vw;
+    color: #5C4A59;
+    padding-top: 13.5%;
+}
+.textexistente{
+    color: #000000;
+    font-size: 1vw;
+   
+}
+.input{
+    width: 90%;
+    height: 18px;
+    border-radius: 3px;
+    border: 1px solid #E5E5E5;
+    padding: 0.4em 0.4em 0.4em 0.4em;
+}
+.input:focus{
+    box-shadow: 0 0 1px 3px #5B7900;
+    outline: none;
+}
+
+::placeholder{
+       font-size: 1vw;
+       font-family: Montserrat;
+       color: #9C9C9C;
+}
+/*fin barra de busqueda*/
+/*datos generales formulario*/
+.datosgenerales{
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    margin-left: 5%;
+}
+.f1{
+    width: 96%;
+    grid-column: 1/4;
+    padding: 1em 1em 1em 0em;
+    border-bottom: #D0D0D0 1px solid;
+}
+
+.f2{
+    width: 100%;
+    height: 100%;
+    padding-top: 1em;
+}
+.f3{
+    width: 100%;
+    height: 100%;
+    padding-top: 1em;
+ 
+}
+.f4{
+    width: 100%;
+    height: 100%;
+    padding-top: 1em;
+ 
+}
+.labelf1{
+    font-size: 1vw;
+    color:#415942;
+    font-weight: 700;
+    font-family:Montserrat;     
+}
+.obligatorios{
+    font-size: 0.8vw;
+    color:#415942;
+   
+    font-family:Montserrat;   
+}
+/*FIn datos generales formulario*/
+/*Datos produccion formulario*/
+.datosproduccion{
+    width: 90%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+/*Fin datos produccion formulario*/
+/*observaciones*/
+.observaciones{
+    width: 90%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    
+}
+.texttarea{
+    border-radius: 6px;
+    border: 1px solid #E5E5E5;
+    padding: 0.4em 0.4em 0.4em 0.4em;
+    margin-top: 1%;
+}
+.texttarea:focus{
+    box-shadow: 0 0 1px 3px #5B7900;
+    outline: none;
+}
+/*fin observaciones*/
+/*contenedorboton*/
+.contenedorbuttom{
+    width: 90%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: auto;
+    
+}
+.classbutton{
+    width: 25%;
+    height: 48px;
+    background-color: #60495A;
+    border-radius: 6px;
+    border-color: #D8D8D6;
+    color:#FFFFFF;
+    font-size: 1vw;
+    cursor: pointer;
+    
+}
+.classbutton:hover{
+    background-color: #5B7900;
+    color: #FFFFFF;
+}
+/*fin contenedorboton*/
+.btn {
+    width: 40%;
+    height: 48px;
+    background: #60495A;
+   /*padding: 12px 16px;*/
+    border-radius: 6px;
+    font-size: 1vw;
+    color: white;
+    border-color: #60495A;
+    border: solid 1px #60495A;
+}
+.btn:hover{
+    /*background: linear-gradient(180deg, #8AA632 0%, #5C4A59 100%);*/
+    background: #3D3243;
+    transition: all .3s;
+}
+
+
+/*fin div2*/
+/*fin global*/

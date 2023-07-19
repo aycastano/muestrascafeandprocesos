@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/NewMuestra.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Nueva Muestra Productor</title>
+    <script type="module" src="./config.js"></script>
+    <script type="module" src="js/generica.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img class="imglogo"src="resources/frame_logo.png">
+        </div>
+        <div class="iconuser">
+            <img class = "imguser" src="resources/icon_usuario.png">
+        </div>
+        <div class="text">
+            <span>aycastano21@gmail.com</span>
+        </div>
+        <div class="logout">
+            <img class="imglogout"src="resources/icon_salir.png">
+        </div>
+    </header>
+    <div class="subheader" id="atrasmuestra">
+        <span>Muestras &nbsp; > &nbsp; Prueba de taza </span><span class ="textfranjaverde"> &nbsp; > &nbsp; Crear muestra</span>
+    </div>
+
+    <!--GLOBAL-->
+    <div style="height: 15px;"></div>
+    <div class="divglobal">
+        <!--DIV 1-->
+        <div class ="div1">
+            <!--DIV12-->
+            <div class="contenedornuevamuestra">
+                <div class="titulo">
+                    NUEVA MUESTRA
+                </div>
+                <div class="editarmuestra">
+                    <img class="imgeditar"src="resources/btn_editar_muestra.png">
+                </div>
+                <div class="eliminarmuestra">
+                    <img class="imgeliminar"src="resources/btn_eliminar_muestra.png">
+                </div>
+            </div>
+            <div style="height: 15px;"></div>
+            <form id = "form" action="" >
+                <div class="selectores">
+                    <div>
+                        <span class="optionselector">Tipo de análisis</span>
+                    </div>
+                    <div>
+                        <span class="optionselector">Presentación de muestra</span>
+                    </div>
+                    <div>
+
+                    </div>
+                    <div>
+
+                    </div>
+                
+                    <div>
+                        <select id = "tipoanalisis" class="inputselector" >
+                            <option selected class="optionselector">Tipo de análisis</option>
+                            <option value="1" class="optionselector">Prueba taza</option>
+                            <option value="2" class="optionselector">Análisis básico</option>
+                            <option value="3" class="optionselector">Perfilación sencilla</option>
+                            <option value="4" class="optionselector">Análisis completo</option>
+                            <option value="5" class="optionselector">Análisis comercial</option>
+                        </select>
+                    </div>
+                
+                    <div>
+                        <select id = "presentacionmuestra" class="inputselector" >
+                            <option selected   class="optionselector">Presentacion de muestra</option>
+                            <option value="1"  class="optionselector">Pergamino</option>
+                            <option value="2"  class="optionselector">Almendra</option>
+                            <option value="3"  class="optionselector">Cacota</option>
+                        </select>
+                    </div>
+                </div>
+                
+            </div>
+            <div style="height: 15px;"></div>
+            <!--DIV 2-->
+            <div class="div2">
+                <!--Pasos-->
+                <div class="pasos">
+                    <div class="muestra">
+                        <img class="imgmuestras" src="resources/muestras _on.png">
+                    </div>
+                    <div class="fisico">
+                        <img  class ="imgfisico" src="resources/analisis_fisico_off.png">
+                    </div>
+                    <div class="sensorial">
+                        <img class = "imgsensorial" src="resources/analisis_sensorial_off.png">
+                    </div>
+                </div>
+                <div style="height: 25px;"></div>
+                <!--formulario - barra de busqueda-->
+                <div class="barrabusqueda">
+                    <div class="productor" id="productores">
+                        <input type="radio"  id = "productor" checked = "true"  value ="productor">
+                        <label class="label">Productor</label>
+                    </div>
+                    <div class="empresa" id="empresas">
+                        <input type="radio"  id = "empresa" value ="empresa">
+                        <label class="label">Empresa</label>    
+                    </div>
+                    <div class="textoseleccionar">
+                        <span class="textexistente">Seleccionar productor existente</span>
+                    </div>
+                    <div class="inputbusqueda">
+                    <input type="text" class="input" placeholder="Buscar por código de productor">
+                    </div>
+                    
+                </div>
+                <div style="height: 15px;"></div>
+                <!--Datos generales-->
+                    <div class="datosgenerales">
+                        <div class="f1">
+                            <label class="labelf1">Datos generales <span class="obligatorios">&nbsp;*Todos los campos son obligatorios</span></label>
+                        </div>
+                        <div class="f2">
+                            <label for ="nombre" class="optionselector">Nombre*</label>
+                            <div style="height: 5px;"></div>
+                            <input class="input" type="text" id="nombre" placeholder="Nombre"  required>
+                        </div>
+                        <div class="f2">
+                            <label for ="apellido" class="optionselector">Apellido*</label>
+                            <div style="height: 5px;"></div>
+                            <input class="input" type="text" id="apellido"  placeholder="Apellido" required>
+                        </div>
+                        <div class="f2">
+                            <label  for ="telefono" class="optionselector">Telefono*</label>
+                            <div style="height: 5px;"></div>
+                            <input class="input" type="text" id="telefono" placeholder="Teléfono"  required>
+                        </div>
+                        <div class="f3">
+                            <label  for ="direccion" class="optionselector">Dirección*</label>
+                            <div style="height: 5px;"></div>
+                            <input class="input" type="text" id="direccion" placeholder="Dirección"  required>
+                        </div>
+                        <div class="f3">
+                            <label  for ="departamento" class="optionselector">Departamento*</label>
+                            <div style="height: 5px;"></div>
+                            <input class="input" type="text" id="departamento" placeholder="Departamento"  required>
+                        </div>
+                        <div class="f3">
+                            <label for ="municipio" class="optionselector">Municipio*</label>
+                            <div style="height: 5px;"></div>
+                            <input class="input" type="text" id="municipio" placeholder="Municipio"  required>
+                        </div>
+                    </div>
+                    <div style="height: 5px;"></div>
+                    <!--Datos de produccion-->
+                    <div class="datosproduccion">
+                        <div class="f1">
+                            <label class="labelf1">Datos de producción <span class="obligatorios">&nbsp;*Todos los campos son obligatorios</span></label>
+                        </div>
+                        <div class="f2">
+                            <label  for ="finca" class="optionselector">Finca*</label>
+                            <div style="height: 5px;"></div>
+                            <input class="input" type="finca" placeholder="Finca" id="finca" required>
+                        </div>
+                        <div class="f2">
+                            <label for ="codigointerno" class="optionselector">Código interno*</label>
+                            <div style="height: 5px;"></div>
+                            <input class="input" type="Text" placeholder="Código interno" id="codigointerno" required>
+                        </div>
+                        <div class="f2">
+                            <label  for ="codigoexterno" class="optionselector">Código externo*</label>
+                            <div style="height: 5px;"></div>
+                            <input class="input" type="Text" placeholder="Código externo" id="codigoexterno" required>
+                        </div>
+                        <div class="f3">
+                            <label for ="codigoproductor" class="optionselector">Código productor*</label>
+                            <div style="height: 5px;"></div>
+                            <input class="input" type="Text" placeholder="Código productor" id="codigoproductor" required>
+                        </div>
+                        <div class="f3">
+                            <label  for ="codigomuestra" class="optionselector">Código muestra*</label>
+                            <div style="height: 5px;"></div>
+                            <input class="input" type="Text" placeholder="Código muestra" id="codigomuestra" required>
+                        </div>
+                        <div class="f3">
+                            <label  for ="proceso" class="optionselector">Proceso*</label>
+                            <div style="height: 5px;"></div>
+                            <input class="input" type="Text" placeholder="Proceso" id="proceso" required>
+                        </div>
+                        <div  class="f4">
+                            <label  for ="humedad" class="optionselector">Humedad*</label>
+                            <div style="height: 5px;"></div>
+                            <input class="input" type="Text" placeholder="Humedad" id="humedad" required>
+                        </div>
+                        <div  class="f4">
+                            <label  for ="origen" class="optionselector">Origen*</label>
+                            <div style="height: 5px;"></div>
+                            <input class="input" type="Text" placeholder="Origen" id="origen" required>
+                        </div>
+                        <div  class="f4">
+                            <label  for ="codigousuario" class="optionselector">Código usuario*</label>
+                            <div style="height: 5px;"></div>
+                            <input class="input" type="Text" placeholder="Código usuario" id="codigousuario" required>
+                        </div>
+                        
+                    </div>
+                    <!--Observacioneds-->
+                    <div style="height: 5px;"></div>
+                    <div class="observaciones">
+                        <div class="f1">
+                            <label for ="observaciones" class="labelf1">Observaciones</label>
+                        </div>
+                        
+                        <div>
+                            <textarea  class = "texttarea" placeholder="Observaciones" id = "observaciones" cols="124" rows="3"></textarea>
+                        </div>
+                    </div>
+            
+                    <!--BOTON-->
+                    <div style="height: 5px;"></div>
+                    <div class="contenedorbuttom">
+                        <button type="submit" class="btn">Guardar muestra</button>
+                    </div>
+                    <div style="height: 10px;"></div>
+            </form>   
+           
+        </div>
+    </div>
+    <script type = "module" src="js/guardarMuestraProductor.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>

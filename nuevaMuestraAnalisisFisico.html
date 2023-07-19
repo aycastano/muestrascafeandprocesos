@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/NewMuestraFisico.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Nueva Muestra</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img class="imglogo"src="resources/frame_logo.png">
+        </div>
+        <div class="iconuser">
+            <img class = "imguser" src="resources/icon_usuario.png">
+        </div>
+        <div class="text">
+            <span>aycastano21@gmail.com</span>
+        </div>
+        <div class="logout">
+            <img class="imglogout"src="resources/icon_salir.png">
+        </div>
+    </header>
+    <div class="subheader">
+        <span>Muestras &nbsp; > &nbsp; Prueba de taza </span><span class ="textfranjaverde"> &nbsp; > &nbsp; Crear muestra</span>
+    </div>
+
+    <!--GLOBAL-->
+    <div style="height: 15px;"></div>
+    <div class="divglobal">
+        <!--DIV 1-->
+        <div class ="div1">
+            <!--DIV12-->
+            <div class="contenedornuevamuestra">
+                <div class="titulo">
+                    NUEVA MUESTRA
+                </div>
+                <div class="editarmuestra">
+                    <img class="imgeditar"src="resources/btn_editar_muestra.png">
+                </div>
+                <div class="eliminarmuestra">
+                    <img class="imgeliminar"src="resources/btn_eliminar_muestra.png">
+                </div>
+            </div>
+            <div style="height: 15px;"></div>
+            <div class="selectores">
+                <div>
+                    <span class="optionselector">Tipo de análisis</span>
+                </div>
+                <div>
+                    <span class="optionselector">Presentación de muestra</span>
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+                <div>
+                    <select class="inputselector">
+                        <option selected class="optionselector">Tipo de análisis</option>
+                        <option value="1" class="optionselector">Prueba taza</option>
+                        <option value="2" class="optionselector">Análisis básico</option>
+                        <option value="3" class="optionselector">Perfilación sencilla</option>
+                        <option value="4" class="optionselector">Análisis completo</option>
+                        <option value="5" class="optionselector">Análisis comercial</option>
+                    </select>
+                </div>
+            
+                <div>
+                    <select class="inputselector">
+                        <option selected   class="optionselector">Presentacion de muestra</option>
+                        <option value="1"  class="optionselector">Pergamino</option>
+                        <option value="2"  class="optionselector">Almendra</option>
+                        <option value="3"  class="optionselector">Cacota</option>
+                    </select>
+                </div>
+            </div>
+            
+        </div>
+        <div style="height: 15px;"></div>
+        <!--DIV 2-->
+        <div class="div2">
+            <!--Pasos-->
+            <div class="pasos">
+                <div class="muestra">
+                    <img class="imgmuestras" src="resources/muestras _off.png">
+                </div>
+                <div class="fisico">
+                    <img  class ="imgfisico" src="resources/analisis_fisico_on.png">
+                </div>
+                <div class="sensorial">
+                    <img class = "imgsensorial" src="resources/analisis_sensorial_off.png">
+                </div>
+            </div>
+            <div style="height: 25px;"></div>
+            <!--formulario - barra de busqueda-->
+            <div class="barrabusqueda">
+                <div class="productor">
+                    <input type="radio" value ="productor">
+                    <label class="label">Productor</label>
+                </div>
+                <div class="empresa">
+                    <input type="radio" value ="empresa">
+                    <label class="label">Empresa</label>    
+                </div>
+                <div class="textoseleccionar">
+                      <span class="textexistente">Seleccionar productor existente</span>
+                </div>
+                <div class="inputbusqueda">
+                   <input type="text" class="input" placeholder="Buscar por código de productor">
+                </div>
+                
+            </div>
+            <div style="height: 15px;"></div>
+            <!--Datos generales-->
+            <form>
+                <div class="datosgenerales">
+                    <div class="f1">
+                        <label class="labelf1">Defectos <span class="obligatorios">&nbsp;*Todos los campos son obligatorios</span></label>
+                    </div>
+                    <div class="f2">
+                        <label class="optionselector">Peso negros y vinagres*</label>
+                        <div style="height: 5px;"></div>
+                        <input class="input" type="text" placeholder="Peso negros y vinagres" id="pesonegrosvinagres" required>
+                    </div>
+                    <div class="f2">
+                        <label  class="optionselector">Peso broca severa*</label>
+                        <div style="height: 5px;"></div>
+                        <input class="input" type="text" placeholder="Peso broca severa" id="pesobrocasevera" required>
+                    </div>
+                    <div class="f2">
+                        <label  class="optionselector">Peso punto de broca*</label>
+                        <div style="height: 5px;"></div>
+                        <input class="input" type="text" placeholder="Peso punto de broca" id="pesopuntobroca" required>
+                    </div>
+                    <div class="f3">
+                        <label  class="optionselector">Peso de otros(partidos, mordidos)*</label>
+                        <div style="height: 5px;"></div>
+                        <input class="input" type="text" placeholder="Peso de otros(partidos, mordidos)" id="pesosotros" required>
+                    </div>
+                </div>
+                <div style="height: 5px;"></div>
+                <!--Datos de produccion-->
+                <div class="datosproduccion">
+                    <div class="mayaf1">
+                        <label class="labelf1">Maya <span class="obligatorios">&nbsp;*Todos los campos son obligatorios</span></label>
+                    </div>
+                    <div class="maya18 checkbox-wrapper-39">
+                        <label  class="optionselector">18</label>
+                        <label>
+                            <input type="checkbox"/>
+                            <span class="checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="maya17 checkbox-wrapper-39">
+                        <label  class="optionselector">17</label>
+                        <label>
+                            <input type="checkbox"/>
+                            <span class="checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="maya16 checkbox-wrapper-39">
+                        <label  class="optionselector">16</label>
+                        <label>
+                            <input type="checkbox"/>
+                            <span class="checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="maya15 checkbox-wrapper-39">
+                        <label  class="optionselector">15</label>
+                        <label>
+                            <input type="checkbox"/>
+                            <span class="checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="maya14 checkbox-wrapper-39">
+                        <label  class="optionselector">14</label>
+                        <label>
+                            <input type="checkbox"/>
+                            <span class="checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="maya13 checkbox-wrapper-39">
+                        <label  class="optionselector">13</label>
+                        <label>
+                            <input type="checkbox"/>
+                            <span class="checkbox"></span>
+                        </label>
+                    </div>
+                    <div  class="maya12 checkbox-wrapper-39">
+                        <label  class="optionselector">12</label>
+                        <label>
+                            <input type="checkbox"/>
+                            <span class="checkbox"></span>
+                        </label>
+                    </div>
+                    
+                </div>
+                <!--Almendra sana  peso bajo maya-->
+                <div class="contalmendra">
+                    <div>
+                        <label  class="optionselector">Almendra sana*</label>
+                        <input class="input" type="Text" placeholder="Almendra sana" id="almendrasana" required>
+                    </div>
+                    <div>
+                        <label  class="optionselector">Peso bajo maya*</label>
+                        <input class="input" type="Text" placeholder="Peso bajo maya" id="codigousuario" required>
+                    </div>
+                </div>
+                <!--Observacioneds-->
+                <div style="height: 5px;"></div>
+                <div class="observaciones">
+                    <div class="f1">
+                        <label class="labelf1">Observaciones</label>
+                    </div>
+                    
+                    <div>
+                        <textarea  class = "texttarea" placeholder="Observaciones" cols="124" rows="3"></textarea>
+                    </div>
+                </div>
+                <!--BOTON-->
+                <div style="height: 5px;"></div>
+                <div class="contenedorbuttom">
+                    <button class="classbutton">Guardar muestra</button>
+                </div>
+                <div style="height: 10px;"></div>
+            </form>   
+           
+        </div>
+    </div>
+   
+</body>
+</html>

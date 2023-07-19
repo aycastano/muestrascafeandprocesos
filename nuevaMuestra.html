@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formuestra.css">
+    <title>Nueva Muestra</title>
+</head>
+<body style="background-color:#FFFFFF;">
+    <header class="header">
+        <div class="headercol1">
+            <img class="frame_logo" src="resources/frame_logo.png">
+        </div>
+        <div class="headercol2">
+            <img class="icon_usuario" src="resources/icon_usuario.png">
+        </div>
+        <div class="headercol3">
+            <img class="icon_salir" src="resources/icon_salir.png">
+        </div>
+    </header>
+    <div>
+        <p class = "franjagris"><a href="landing.html">Muestras  > Prueba de taza</a><span class="boldcrearmuestra">> crear muestra</span></p>
+    </div>
+    <div class="cont">
+        <div class ="contenedorselectores">
+            <div  class="nav">
+                <p class="col1 textnav ">Nueva Muestra</p>
+                <img class="col2 navimg" src="resources/btn_editar_muestra.png">
+                <img class="col3 navimg" src="resources/btn_eliminar_muestra.png">
+            </div>      
+            <table class="tablaselectores">
+                <tr>
+                    <td class="tdselectores">
+                        <p class="optionselector">Tipo de análisis</p>
+                        <select id="tipoanalisis" class="inputselector">
+                            <option selected class="optionselector">Tipo de análisis</option>
+                            <option value="1" class="optionselector">Prueba taza</option>
+                            <option value="2" class="optionselector">Análisis básico</option>
+                            <option value="3" class="optionselector">Perfilación sencilla</option>
+                            <option value="4" class="optionselector">Análisis completo</option>
+                            <option value="5" class="optionselector">Análisis comercial</option>
+                        </select>
+                    </td>
+                    <td class="tdselectores">
+                        <p class="optionselector">Presentación de muestra</p>
+                        <select id="presentacionmuestra" class="inputselector">
+                            <option selected   class="optionselector">Presentacion de muestra</option>
+                            <option value="1"  class="optionselector">Pergamino</option>
+                            <option value="2"  class="optionselector">Almendra</option>
+                            <option value="3"  class="optionselector">Cacota</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+ 
+    <div class="global">
+        <div class="contenedor">
+            <ul class="ul">
+                <li class="li activo"><a href="./resources/btn_muestras_active.png" class="navimg"></a></li>
+                <li class="li">Empresa</li>
+            </ul>
+            <div class="subcontenedor">
+                <div class="bloque activo">
+                    <form id="guardarmuestraproducto">
+                        <p>Datos Generales</p>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label id="labelnombre">Nombre*</label>
+                                    <br>
+                                    <input id="nombre"type="text" placeholder="Nombre">
+                                </td>
+                                <td>
+                                    <label id="labelapellido">Apellido*</label>
+                                    <br>
+                                    <input id="apellido"type="text" placeholder="Apellido">
+                                </td>
+                                <td>
+                                    <label id="labeltelefono">Teléfono*</label>
+                                    <br>
+                                    <input id="telefono"type="text" placeholder="Teléfono">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label id="labeldireccion">Dirección*</label>
+                                    <br>
+                                    <input id="direccion"type="text" placeholder="Dirección">
+                                </td>
+                                <td>
+                                    <label id="labeldepartamento">Departamento*</label>
+                                    <br>
+                                    <input id="departamento"type="text" placeholder="Departamento">
+                                </td>
+                                <td>
+                                    <label id="labelmunicipio">Municipio*</label>
+                                    <br>
+                                    <input id="municipio"type="text" placeholder="Municipio">
+                                </td>
+    
+                            </tr>
+                        </table>
+                        <p>Datos de producción</p>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label id="labelfinca">Finca*</label>
+                                    <br>
+                                    <input id="finca"type="text" placeholder="Finca">
+                                </td>
+                                <td>
+                                    <label id="labelcodigointerno">Código interno*</label>
+                                    <br>
+                                    <input id="codigointerno"type="text" placeholder="Código interno">
+                                </td>
+                                <td>
+                                    <label id="labelcodigoexterno">Código Externo*</label>
+                                    <br>
+                                    <input id="codigoexterno"type="text" placeholder="Código Externo">
+                                </td>
+    
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label id="labelcodigoproductor">Codigo Productor*</label>
+                                    <br>
+                                    <input id="codigoproductor"type="text" placeholder="Codigo Productor">
+                                </td>
+                                <td>
+                                    <label id="labelfecha">Fecha*</label>
+                                    <br>
+                                    <input id="fecha"type="text" placeholder="Fecha">
+                                </td>
+                                <td>
+                                    <label id="labelcodigomuestra">Código muestra*</label>
+                                    <br>
+                                    <input id="codigomuestra"type="text" placeholder="Código muestra">
+                                </td>
+    
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label id="labelproceso">Proceso*</label>
+                                    <br>
+                                    <input id="proceso"type="text" placeholder="Proceso">
+                                </td>
+                                <td>
+                                    <label id="labelhumedad">Humedad*</label>
+                                    <br>
+                                    <input id="humedad"type="text" placeholder="Humedad">
+                                </td>
+                                <td>
+                                    <label id="labelorigen">Origen*</label>
+                                    <br>
+                                    <input id="origen"type="text" placeholder="Origen">
+                                </td>
+                            </tr>
+                        </table>
+                         <p>Observaciones</p>
+                        <table>
+                            <tr>
+                                <td>
+                                    <textarea name="observaciones" id="observaciones" cols="100" rows="3"></textarea>
+                                </td>
+                            </tr>
+    
+                        </table>
+                    <button >Guardar Muestra</button>
+                </form>
+                                             
+                </div>
+                <div class="bloque">soy empresa</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/formuestra.js"></script> 
+    <script src="js/guardarMuestraProducto.js"></script>
+</body>
+</html>

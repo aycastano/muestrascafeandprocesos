@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/landingcss2.css">
+    <link rel="stylesheet" href="css/css.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Landing</title>
+</head>
+<body>
+    <header class="header">
+        <table class="tabla">
+            <tr>
+                <td class="col1"><img class="frame_logo" src="resources/frame_logo.png"></td>
+                <td class="col2"><img class="icon_usuario" src="resources/icon_usuario.png"></td>
+                <td class="col3">cerrar sesion<img class="icon_salir" src="resources/icon_salir.png" onclick="logout()"></td>
+            </tr>
+        </table>
+        <div class="home">
+            <p class="">home ></p>
+        </div>
+ 
+        <table class="table2">
+            <tr>
+                <div class="contenedor">
+                    <ul class="ul">
+                        <div class="contenedorli">
+                            <li class=""><img class="img" src="resources/muestras _on.png"></li>
+                        </div>
+                       <!-- <div class="contenedorli">
+                            <li class=""><img class="img" src="resources/analisis_fisico_off.png"></li>
+                        </div>
+                        <div class="contenedorli">
+                            <li class=""><img class="img" src="resources/analisis_sensorial_off.png"></li>
+                        </div>-->
+                        <div class="contenedorli">
+                            <li class=""><img class="img" src="resources/reportes_off.png"></li>
+                        </div>
+                       
+                    </ul>
+            </tr>
+            <tr>
+                <td class="btn1">
+                 
+                </td>
+                <td class="btn2">
+                  
+                </td>
+                <td class="btn3">
+                    <img src="resources/btn_crear_muestra.png" id ="crearmuestra" onclick="crearMuestra()" class="btncrearmuestra">
+                </td>
+                <!--<td class="btn4">
+                    <input src="resources/btn_crear_muestra.png" id="crearmuestra" onclick="crearMuestra()" class="btncrearmuestra"></input>
+                    
+                </td>-->
+            </tr>
+        </table>
+        <div class="contenedor1">
+            <div class="contenedor">
+                <ul class="ul">
+                    <li class="li activo">Prueba de taza</li>
+                    <li class="li">Análisis básico</li>
+                    <li class="li">Perfilación sencilla</li>
+                    <li class="li">Análisis completo</li>
+                    <li class="li">Analisís comercial</li>
+                    <img src="resources/icon_buscar.png" class="icon_buscar"><input type="text" placeholder="Buscar" class="input">
+                </ul>
+                <div class="subcontenedor">
+                    <div class="bloque activo">
+                        <table id="tabla">
+                            <thead>
+                                <tr>
+                                <th scope ="col" class="th">Tipoanalisis</th>
+                               <!---- <th scope="col">presentacionmuestra</th>-->
+                                <th scope="col" class="th">Nombre</th>
+                                <th scope="col" class="th">Apellido</th>
+                                <!--<th scope="col" class="th">Direccion</th>-->
+                                <!--<th scope="col">departamento</th>
+                                <th scope="col">municipio</th>-->
+                                <!--<th scope="col" class="th">Finca</th>-->
+                                <!--<th scope="col">codigointerno</th>-->
+                                <!--<th scope="col" class="th">codigoexterno</th>-->
+                                <th scope="col" class="th">Codigo Productor</th>
+                                <th scope="col" class="th">Fecha</th>
+                                <!--<th scope="col" class="th">Codigo Muestra</th>-->
+                                <th scope="col" class="th">proceso</th>
+                                <th scope="col" class="th">humedad</th>
+                                <th scope="col" class="th">origen</th>
+                                <th scope="col"class="th">observaciones</th>
+                                </tr>
+                              </thead>
+                              <tbody id ="listamuestrasproducto">
+                                
+                                           
+                              </tbody> 
+                        </table>
+                    </div>
+                    <div class="bloque">soy Análisis básico</div>
+                    <div class="bloque">soy Perfilación sencilla</div>
+                    <div class="bloque">soy Análisis completo</div>
+                    <div class="bloque">soy Analisís comercial</div>
+                </div>
+            </div>
+        </div>
+      
+      
+    </header>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/lading.js"></script>
+    <script src="js/consultarMuestraproducto.js"></script>
+    <script src="js/logout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</body>
+</html>

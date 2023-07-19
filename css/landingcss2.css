@@ -1,0 +1,190 @@
+.margin{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+.header{
+    background-color: #3F3244;
+    width: 100%;
+    height: 87px;
+}
+.tabla{
+    width: 100%;
+    height: 40px;
+}
+.table2{
+    width: 100%;
+    height: 30px;
+}
+
+.col1{
+   width: 70%;
+   height: 87px;
+   color: white;
+}
+.col2{
+    width: 15%;
+    height: 87px;
+    color: white;
+    text-align: center;
+ }
+ .col3{
+    width: 15%;
+    height: 87px;
+    color: white;
+    text-align: right;
+ }
+ .btn1{
+    width: 25%;
+     height:50Px ;
+     color: red;
+ }
+ .btn2{
+    width: 25%;
+     height:50Px ;
+     color:red;
+ }
+ .btn3{
+    width: 50%;
+     height:50Px ;
+     color: red;
+ }
+ /*.btn4{
+    width: 25%;
+     height:50Px ;
+     color: red;
+ }*/
+ .btncrearmuestra{
+    width: 20%;
+    height: 100%;
+    margin-left: 25em;
+    cursor: pointer;
+ }
+ .contenedor{
+    /* background-color: lightgray;*/
+     max-width: 120em;
+     width: 100%;
+    /* margin-left:5em;*/
+    /* padding: 1em;*/
+  }
+  .contenedor .ul{
+     width: 100%;
+     /*background-color: lightblue;*/
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: flex-start;
+     align-items: center;
+     list-style:none;
+ 
+  }
+  .contenedor .li{
+     /*background-color: green;*/
+     padding: 1em;
+     margin: 0 1em 0 0;
+     transition: all .5s ease;
+     cursor: pointer;
+     background-color: #F3F3F3;
+     border-radius: 10px;
+ 
+  }
+  .contenedor .li.activo{
+     background-color: #60495A;
+     color: white;
+ 
+  }
+  .contenedor .subcontenedor{
+     min-height: 30vh;
+     /*background-color: aqua;*/
+     position:relative;
+  }
+  .contenedor .bloque{
+    /* background-color: red;*/
+     padding: 1em;
+     margin: 1em;
+     position:absolute;
+     top: 0;
+     opacity: 0;
+     transition: all .5s ease;
+  }
+  .contenedor .bloque.activo{
+     opacity: 1;
+    
+  }
+  .contenedorli{
+  /* padding: 0 0 0 0;*/
+   width: 50%;
+   height:10%;
+  }
+  .linav{
+   width: 50%;
+   height: 10px;
+   /*background-color:#8AA632;*/
+   padding: 1em 1em 1em 1em;
+   border-radius: 1em;
+  }
+
+.img{
+   width: 100%;
+   height: 25%;
+   cursor: pointer;
+}
+
+.img:hover{
+   background: #8b117b;
+   transition: all .3s;
+}
+
+
+.frame_logo {
+  /*  padding: 0 1em 1em 2em; */
+   width: 25%;
+   /* height: 100%; */
+   vertical-align: center;
+}
+
+.icon_usuario{
+   /*padding: 0 0 0 0;*/
+    width: 10%;
+   /*height: 60%;*/
+}
+.icon_salir{
+   padding: 1em 1em 1em 1em;
+   width: 25%;
+  height: 80%;
+  cursor:pointer;
+}
+.home{
+   padding: 0.4em 0 0 5em;
+   width: 100%;
+  height: 40%;
+ background-color:#F7F7F7;
+}
+
+.th{
+   padding: 20px 15px;
+   font-weight: 700px;
+   
+}
+
+.td{
+   padding: 15px;
+   border-bottom: solid 1px #8AA632;
+}
+
+.contenedor1{
+    margin-left: 8em;
+ }
+.icon_ver{
+   width: 40%;
+   height: 40%;
+   cursor: pointer;
+}
+.icon_buscar{
+   width: 2%;
+   height: 2%;
+}
+.inputbuscar{
+   border-color: #9C9C9C;
+}

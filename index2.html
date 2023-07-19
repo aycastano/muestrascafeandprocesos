@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <title>App Cafe & procesos</title>
+</head>
+<body class="body">
+    <div class="contenedorIzquierdo">
+     <img src="resources/cafe_login.png" class = "photoMain">
+    </div>
+    <div class="contendedorDerecho">
+        <table>
+            <tr>
+                <td>
+                    <img class="photoLogo" src="resources/Logo.png">
+                </td>
+                <td>
+                    <p class="TextTitle">Café y procesos</p>
+                </td>
+            </tr>
+        </table>
+        <div class="linea"></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <form action="index" class="formulario">
+            <label id="user" class="labels">Usuario</label>
+            <input type="text" id="usuario" class="input" placeholder="Ingrese Usuario">
+            <br>
+            <label id="pass" class="labels">password</label>
+            <input type="password" id="password" class="input" placeholder="Ingrese Contraseña">
+            <br>
+            <label id="pass" class="forgetPass"> <u>Olvidé mi contraseña</u></label>
+            <br>
+            <input  value="Inicar sesion" onclick="login()" class="btn">
+        </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/config.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
