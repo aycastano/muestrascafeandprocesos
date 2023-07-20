@@ -65,20 +65,20 @@
             </div>
             <div  class="contenedor">
                 <ul class="ul">
-                    <li class="li activo" id="pruebataza">Prueba de taza</li>
+                    <li class="li " id="pruebataza" onclick="verLandingTaza()">Prueba de taza</li>
                     <li class="li"  id="analisisbasico" onclick="verLandingFisico()">Análisis básico</li>
                     <li class="li"  id="perfilacionsencilla" onclick="verLandingSencilla()">Perfilación sencilla</li>
-                    <li class="li"  id="perfilacioncompleto" onclick="verLandingCompleta()">Análisis completo</li>
+                    <li class="li activo"  id="perfilacioncompleto">Análisis completo</li>
                     <li class="li"  id="analisiscomercial" onclick="verLandingComercial()">Analisís comercial</li>
                 </ul>
-                <div class="subcontenedor">
-                    <div class="bloque activo">
+                <!-- <div class="subcontenedor">
+                    <div class="bloque activo"> -->
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="table-responsive">
                                         <!--Tabla prueba de taza-->
-                                        <table id="tabla_prueba_taza" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                                        <table id="tabla_analisis_completo" class="table table-striped table-bordered" cellspacing="0" width="100%">
                                             <thead>
                                                 <tr>
                                                     <th  class="th">Tipoanalisis</th>
@@ -114,8 +114,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    <!-- </div>
+                </div> -->
             </div>
             
         </div>
@@ -143,11 +143,11 @@
 <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore-compat.js"></script> -->
 <script src="js/lading.js"></script>
-<script  type = "module" src="js/consultarPruebaTaza.js" ></script>
-<!-- <script src="js/consultarAnalisisBasico.js" type = "module"></script>
-<script src="js/consultarPerfilacionSencilla.js"  type = "module"></script>
+<!-- <script  type = "module" src="js/consultarPruebaTaza.js" ></script>
+<script src="js/consultarAnalisisBasico.js" type = "module"></script>
+<script src="js/consultarPerfilacionSencilla.js"  type = "module"></script> -->
 <script src="js/consultarAnalisisCompleto.js"  type = "module"></script>
-<script src="js/consultarAnalisisComercial.js"  type = "module"></script> -->
+<!-- <script src="js/consultarAnalisisComercial.js"  type = "module"></script> -->
 <script src="js/logout.js"></script>
 </body>
 </html>

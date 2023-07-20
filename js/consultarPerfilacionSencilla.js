@@ -6,6 +6,7 @@ const perfilacionsencilla = document.getElementById("perfilacionsencilla");
 
 perfilacionsencilla.addEventListener("click",async e=>{
     e.preventDefault();
+});
         let muestrasproducto= [];
         let longitud;
         let dataTable;
@@ -19,7 +20,7 @@ perfilacionsencilla.addEventListener("click",async e=>{
                          }],       
                 language: {
                         "lengthMenu": "Mostrar _MENU_ registros",
-                        "zeroRecords": "No se encontraron resultados",
+                        "zeroRecords": "Procesando",
                         "info": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
                         "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
                         "infoFiltered": "(filtrado de un total de _MAX_ registros)",
@@ -122,7 +123,7 @@ perfilacionsencilla.addEventListener("click",async e=>{
             console.log("tipo: "+muestrasproducto[i]);
         })
     //}
-});
+
 
 
 

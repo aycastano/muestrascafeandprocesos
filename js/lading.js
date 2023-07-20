@@ -33,3 +33,22 @@ function crearMuestra(){
 function verMuestra(){
     location.replace("verModificarMuestra.html");
 }
+function verLandingTaza(){
+    location.replace("Landing.html");
+}
+
+function verLandingFisico(){
+    location.replace("landingAnalisifisico.html");
+}
+
+function verLandingSencilla(){
+    location.replace("landingSencilla.html");
+}
+
+function verLandingCompleta(){
+    location.replace("landingAnalisisCompleto.html");
+}
+
+function verLandingComercial(){
+    location.replace("landingAnalisisComercial.html");
+}

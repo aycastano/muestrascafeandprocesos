@@ -127,9 +127,10 @@
  }
  .contenedorbtn3 {
    width: 90%;
-   margin-left: 5%;
+   margin-left: 6%;
    display: grid;
    grid-template-columns: auto auto 15%;
+  
 
 }
 .btn3{
@@ -157,6 +158,8 @@
  .contenedor{
      width: 90%;
      margin-left: 5%;
+     /* background-color: red; */
+     padding-left: 2%;
  
   }
   .contenedor .ul{
@@ -189,7 +192,7 @@
   }
   .contenedor .subcontenedor{
      /*min-height: 30vh;*/
-     background-color: aqua;
+     /* background-color: aqua; */
      position:relative;
   
     

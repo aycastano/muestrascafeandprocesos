@@ -7,7 +7,7 @@ import {db} from './firebase.js';
 const pruebataza = document.getElementById('pruebataza');
  pruebataza.addEventListener("click", async e=> {
       e.preventDefault();
-      location.reload();
+      //location.reload();
      
 });
         let muestrasproducto= [];
@@ -19,12 +19,12 @@ const pruebataza = document.getElementById('pruebataza');
         $(document).ready(function() {   
             dataTable=$('#tabla_prueba_taza').DataTable({  
                 columnDefs:[{
-                      "defaultContent":"*",
-                      "targets":"_all"
-                           }],
+                    "defaultContent":"*",
+                    "targets":"_all"
+                         }],
                 language: {
                         "lengthMenu": "Mostrar _MENU_ registros",
-                        "zeroRecords": "No se encontraron resultados",
+                        "zeroRecords": "Procesando",
                         "info": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
                         "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
                         "infoFiltered": "(filtrado de un total de _MAX_ registros)",
@@ -103,9 +103,9 @@ const pruebataza = document.getElementById('pruebataza');
                           doc.data().observaciones];
             // console.log("dataSet:"+dataSet);
 
-            dataSet.forEach((cada,i,dataSet)=>{
-                console.log("dataSet:"+dataSet[i]);
-            });    
+            // dataSet.forEach((cada,i,dataSet)=>{
+            //     console.log("dataSet:"+dataSet[i]);
+            // });    
                 document.getElementById("listamuestrasproducto").innerHTML +=` <tr>
                 <td>${doc.data().tipoanalisis}</td>
                 <td>${doc.data().nombre}</td>
