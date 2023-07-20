@@ -5,51 +5,107 @@ import {db} from './firebase.js';
 
 
 const pruebataza = document.getElementById('pruebataza');
-
-pruebataza.addEventListener("click", async e=> {
-         
-       e.preventDefault();
-
-
-        //location.reload();
+ pruebataza.addEventListener("click", async e=> {
+      e.preventDefault();
+      location.reload();
+     
+});
         let muestrasproducto= [];
-        let longitud;
+        let longitud; 
         let dataTable;
+        
         let dataSet=[];
-        dataTable=$("#tabla_prueba_taza").DataTable({
-            pageLength : 10,
-            lengthMenu :[[10,15,20,-1],[10,15,20,'Todos']],
-            data:dataSet,
-            columnDefs:[
-                {
-                    targets:[0],
-                    visible:true,
-                },
-                {
-                    targets:-1,
-                    defaultContent:"<img src ='resources/icon_ver.png' class='icon_ver' onclick='verMuestra()'>"
-                }
-            ]
+
+        $(document).ready(function() {   
+            dataTable=$('#tabla_prueba_taza').DataTable({  
+                columnDefs:[{
+                      "defaultContent":"*",
+                      "targets":"_all"
+                           }],
+                language: {
+                        "lengthMenu": "Mostrar _MENU_ registros",
+                        "zeroRecords": "No se encontraron resultados",
+                        "info": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                        "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                        "infoFiltered": "(filtrado de un total de _MAX_ registros)",
+                        "sSearch": "Buscar:",
+                        "oPaginate": {
+                            "sFirst": "Primero",
+                            "sLast":"Último",
+                            "sNext":"Siguiente",
+                            "sPrevious": "Anterior"
+                         },
+                         "sProcessing":"Procesando...",
+                    },
+                //para usar los botones   
+                responsive: "true",
+                dom: 'Bfrtilp',       
+                buttons:[ 
+                    {
+                        extend:    'excelHtml5',
+                        text:      '<i class="fas fa-file-excel"></i> ',
+                        titleAttr: 'Exportar a Excel',
+                        className: 'btn btn-success'
+                    },
+                    {
+                        extend:    'pdfHtml5',
+                        text:      '<i class="fas fa-file-pdf"></i> ',
+                        titleAttr: 'Exportar a PDF',
+                        className: 'btn btn-danger'
+                    },
+                    {
+                        extend:    'print',
+                        text:      '<i class="fa fa-print"></i> ',
+                        titleAttr: 'Imprimir',
+                        className: 'btn btn-info'
+                    },
+                ]	        
+            }); 
+            dataTable.clear().draw();   
         });
+        // dataTable=$("#tabla_prueba_taza").DataTable({
+        //     pageLength : 10,
+        //     lengthMenu :[[10,15,20,-1],[10,15,20,'Todos']],
+        //     data:dataSet,
+        //     columnDefs:[
+        //         {
+        //             targets:[0],
+        //             visible:true,
+        //         },
+        //         {
+        //             targets:-1,
+        //             defaultContent:"<img src ='resources/icon_ver.png' class='icon_ver' onclick='verMuestra()'>"
+        //         }
+        //     ]
+        // });
            
-       
+     
         const querySnapshot = await getDocs(collection(db, "muestrasProductores"));
         document.getElementById("listamuestrasproducto").innerHTML = '';
         
         querySnapshot.forEach((doc) => {
         // console.log(`${doc.id} => ${doc.data()}`);
         // console.log("tipo analisis:" +doc.data().tipoanalisis);
-           muestrasproducto.push(doc.data().tipoanalisis);
+           //muestrasproducto.push(doc.data().tipoanalisis);
            //dataSet = [];
 
-            if(doc.data().tipoanalisis == "1"){
+
+         if(doc.data().tipoanalisis == "1"){
              
-                dataSet =[doc.data().tipoanalisis,doc.data().nombre,doc.data().apellido,doc.data().codigoproductor,
-                doc.data().hora,doc.data().proceso,doc.data().humedad,doc.data().origen,doc.data().observaciones];
+                dataSet =[doc.data().tipoanalisis,
+                          doc.data().nombre,
+                          doc.data().apellido,
+                          doc.data().codigoproductor,
+                          doc.data().hora,
+                          doc.data().proceso,
+                          doc.data().humedad,
+                          doc.data().origen,
+                          doc.data().observaciones];
             // console.log("dataSet:"+dataSet);
-                
-                dataTable.rows.add([dataSet]).draw();
-                
+
+            dataSet.forEach((cada,i,dataSet)=>{
+                console.log("dataSet:"+dataSet[i]);
+            });    
                 document.getElementById("listamuestrasproducto").innerHTML +=` <tr>
                 <td>${doc.data().tipoanalisis}</td>
                 <td>${doc.data().nombre}</td>
@@ -60,8 +116,12 @@ pruebataza.addEventListener("click", async e=> {
                 <td>${doc.data().humedad}</td>
                 <td>${doc.data().origen}</td>
                 <td>${doc.data().observaciones}</td>
-                <td><img src ="resources/icon_ver.png" class="icon_ver" onclick="verMuestra()"></td>
+               
                 </tr>`
+
+                dataTable.rows.add([dataSet]).draw();
+
+                
             }
         });
        
@@ -72,5 +132,6 @@ pruebataza.addEventListener("click", async e=> {
         muestrasproducto.forEach((cada ,i,muestrasproducto)=>{
             console.log("tipo: "+muestrasproducto[i]);
         })
-})
+//})
+
 

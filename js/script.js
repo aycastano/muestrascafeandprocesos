@@ -1,3 +1,10 @@
-$(document).ready(function () {
-    $('#tabla_muestras').DataTable();
-});
+// $(document).ready(function () {
+//     $('#tabla_muestras').DataTable();
+// });
+
+
+
+
+
+
+
