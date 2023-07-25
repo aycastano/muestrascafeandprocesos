@@ -31,6 +31,8 @@ function crearMuestra(){
 }
 
 function verMuestra(){
+
+    
     location.replace("verModificarMuestra.html");
 }
 function verLandingTaza(){

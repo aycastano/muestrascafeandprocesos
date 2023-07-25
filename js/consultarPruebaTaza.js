@@ -18,10 +18,20 @@ const pruebataza = document.getElementById('pruebataza');
 
         $(document).ready(function() {   
             dataTable=$('#tabla_prueba_taza').DataTable({  
-                columnDefs:[{
-                    "defaultContent":"*",
-                    "targets":"_all"
-                         }],
+                select:true,
+                columnDefs:[
+                    {"data":"tipoanalisis"},
+                    {"data":"nombre"},
+                    {"data":"apellido"},
+                    {"data":"codigoproductor"},
+                    {"data":"hora"},
+                    {"data":"proceso"},
+                    {"data":"humedad"},
+                    {"data":"origen"},
+                    {"data":"observaciones"},
+                    {defaultContent:"<img id = 'ver' src ='resources/icon_ver.png' class='icon_ver' onclick='verMuestra()'>",
+                    "targets":"_all"}
+                ],
                 language: {
                         "lengthMenu": "Mostrar _MENU_ registros",
                         "zeroRecords": "Procesando",
@@ -61,7 +71,8 @@ const pruebataza = document.getElementById('pruebataza');
                     },
                 ]	        
             }); 
-            dataTable.clear().draw();   
+            dataTable.clear().draw();
+           
         });
         // dataTable=$("#tabla_prueba_taza").DataTable({
         //     pageLength : 10,
@@ -73,8 +84,8 @@ const pruebataza = document.getElementById('pruebataza');
         //             visible:true,
         //         },
         //         {
-        //             targets:-1,
-        //             defaultContent:"<img src ='resources/icon_ver.png' class='icon_ver' onclick='verMuestra()'>"
+        //            targets:-1,
+        //           defaultContent:"<img src ='resources/icon_ver.png' class='icon_ver' onclick='verMuestra()'>"
         //         }
         //     ]
         // });
@@ -89,9 +100,7 @@ const pruebataza = document.getElementById('pruebataza');
            //muestrasproducto.push(doc.data().tipoanalisis);
            //dataSet = [];
 
-
          if(doc.data().tipoanalisis == "1"){
-             
                 dataSet =[doc.data().tipoanalisis,
                           doc.data().nombre,
                           doc.data().apellido,
@@ -101,11 +110,7 @@ const pruebataza = document.getElementById('pruebataza');
                           doc.data().humedad,
                           doc.data().origen,
                           doc.data().observaciones];
-            // console.log("dataSet:"+dataSet);
 
-            // dataSet.forEach((cada,i,dataSet)=>{
-            //     console.log("dataSet:"+dataSet[i]);
-            // });    
                 document.getElementById("listamuestrasproducto").innerHTML +=` <tr>
                 <td>${doc.data().tipoanalisis}</td>
                 <td>${doc.data().nombre}</td>
@@ -116,7 +121,7 @@ const pruebataza = document.getElementById('pruebataza');
                 <td>${doc.data().humedad}</td>
                 <td>${doc.data().origen}</td>
                 <td>${doc.data().observaciones}</td>
-               
+                <td></td>
                 </tr>`
 
                 dataTable.rows.add([dataSet]).draw();
@@ -124,6 +129,8 @@ const pruebataza = document.getElementById('pruebataza');
                 
             }
         });
+
+        
        
        setTimeout(() => {
         longitud = muestrasproducto.length;
